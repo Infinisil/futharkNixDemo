@@ -7,8 +7,8 @@
 let
 
   futharkPackages = pkgs.callPackage (builtins.fetchTarball {
-    url = "https://github.com/Infinisil/futharkPackages/archive/88d41439a8d47dc1d33801882e09dbc46850117d.tar.gz";
-    sha256 = "18zwkiiamg5wzql6w2n1gxd9fj3dmvyxxw8jasdhycc419kg9ilk";
+    url = "https://github.com/Infinisil/futharkPackages/archive/c587a7495f752f542d9cbd7946cd6d52aa161873.tar.gz";
+    sha256 = "03k6s85fmxg0p7gpgymwnxa0a628yn06qf5l42icjaazd0g6d2bp";
   }) {};
 
 in with futharkPackages;
