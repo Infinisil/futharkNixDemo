@@ -6,16 +6,15 @@
 
 let
 
-  futharkPackages = pkgs.callPackage ../futharkPackages {};
+  futharkPackages = pkgs.callPackage (builtins.fetchTarball {
+    url = "https://github.com/Infinisil/futharkPackages/archive/88d41439a8d47dc1d33801882e09dbc46850117d.tar.gz";
+    sha256 = "18zwkiiamg5wzql6w2n1gxd9fj3dmvyxxw8jasdhycc419kg9ilk";
+  }) {};
 
-  heston64 = with futharkPackages;
-    buildFuthark {
-      name = "heston";
-      src = fetchGit ./.;
-      futharkDeps = [
-        heston
-      ];
-    };
+in with futharkPackages;
 
-in heston64
-
+buildFuthark {
+  name = "heston64";
+  src = fetchGit ./.;
+  futharkDeps = [ heston ];
+}
