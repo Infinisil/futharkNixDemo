@@ -4,6 +4,8 @@ This a quick and dirty demo of how [Futhark](https://futhark-lang.org/) could po
 
 Movitaion for it was [this recent Futhark blog entry](https://futhark-lang.org/blog/2018-07-20-the-future-futhark-package-manager.html) on creating a package manager ([Reddit discussion](https://www.reddit.com/r/ProgrammingLanguages/comments/90fnop/the_future_futhark_package_manager/)). This is an artificion packagification of https://github.com/diku-dk/futhark-benchmarks/tree/master/misc/heston.
 
+Note that I had to package Futhark for Nix first. The pull request to add it to Nixpkgs is https://github.com/NixOS/nixpkgs/pull/43865
+
 Also see the comments in the filse
 
 ## Packages
